@@ -1,7 +1,4 @@
 [[redirects]]
-  from = "/"
-  to = "/speedbee"
-  status = 200
-  from = "/speedbee"
-  to = "/rank"
+  from = "/*"
+  to = "/index.html"
   status = 200

@@ -1,0 +1,172 @@
+.rankSection{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(112.48deg, #EABF4C 13.49%, #700D0E 70.42%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .board{
+        width: 67.0625%;
+        height: 76.244%;
+        background: rgba(255, 255, 255, 0.9);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(-1.52deg);
+        position: relative;
+        left: -3.4vw;
+        bottom: -2vh;
+
+        .mute{
+            font-size: 5em;
+            position: absolute;
+            top: 3rem;
+            right: 6rem;
+            transform: rotate(3.52deg);
+            cursor: pointer;
+            padding: .8rem;
+            z-index: 5;
+            color: #611c12;
+            transition: .5s ease;
+
+            &:hover{
+                color: #A74132;
+                transform: scale(1.1);
+            }
+        }
+
+        .speedText{
+            font-family: $mouse;
+            font-size: 3rem;
+            line-height: 3.438rem;
+            position: relative;
+            margin: 0rem 0 3rem 4rem;
+            letter-spacing: 0.035em;
+            color: #A74132;
+            margin: 4rem 0 3rem 5rem;
+
+            #speed{
+                color: #777777;
+            }
+        }
+
+        .rankText{
+            font-family: $mouse;
+            font-size: 3rem;
+            line-height: 3.438rem;
+            letter-spacing: 0.035em;
+            color: #A74132;
+            position: relative;
+            margin: 0rem 0 3rem 4rem;
+            transform: rotate(-0.31deg);
+
+            #rank{
+                color: #777777;
+            }
+        }
+
+
+        #toSpeedBee{
+            position: relative;
+            display: inline-block;
+            font-family: $bangers;
+            font-size: 3.588rem;
+            color: #EF6251;
+            text-shadow: 0px 36.1734px 43.1299px rgba(0, 0, 0, 0.25);
+            transform: rotate(-0.91deg);
+            line-height: 3.813rem;
+            margin: 0rem 0 3rem 12rem;
+            transition: ease .5s;
+            cursor: pointer;
+            letter-spacing: 2px;
+            z-index: 5;
+
+            
+            &:hover{
+                color: #f74d3a;
+                transform: scale(1.1);
+            }
+        }
+
+        #menu{
+            display: block;
+            color: #f5733c;
+            font-family: $bangers;
+            font-size: 2.692rem;
+            text-shadow: 0px 27.1361px 32.3546px rgba(0, 0, 0, 0.25);
+            transform: rotate(0.11deg);
+            margin: 6rem 0 2rem 4rem;
+            transition: ease .5s;
+            cursor: pointer;
+            width: 10%;
+            text-align: center;
+            letter-spacing: 2px;
+            position: absolute;
+            bottom: 1rem;
+
+
+            &:hover{
+                color: #F38E62;
+                transform: scale(1.2);
+            }
+        }
+
+        
+        #angryBirds{
+            position: absolute;
+            height: 82%;
+            transform: rotate(0.22deg);
+            right: -12.6rem;
+            bottom: -1.8rem;
+        }
+    }
+
+    .menuBox{
+        display: none;
+        position: absolute;
+        top: 3vh;
+        left: 12vw;
+        z-index: 1;
+        background: #f3e8cc;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        transform: rotate(1.52deg);
+        width: 25%;
+        height: 70%;
+        padding: 4rem 3rem;
+        transition: .5s ease;
+        
+
+        #menuTxt{
+            font-family: $mouse;
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 1.5em;
+            color: #777777;
+            line-height: 1.7rem;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+    }
+
+    .close{
+        position: absolute;
+        font-size: 2rem;
+        top: 0rem;
+        right: .5rem;
+        color: #A74132;
+        padding: 1rem;
+        cursor: pointer;
+        font-family: $bangers;
+    }
+
+    .menuActive{
+        display: block;
+        filter: brightness(1);
+    }
+
+    .dim{
+        filter: brightness(80%);
+    }
+}

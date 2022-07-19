@@ -1,0 +1,334 @@
+@media only screen and (max-width: 697px){
+    .topNav{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    
+        .back-icon{
+            font-size: 2.6em;
+            top: 1vh;
+            z-index: 5;
+            margin-right: 3rem;
+    
+            &:hover{
+                transform: scale(1.1);
+                color: #a74a22;
+            }
+        }
+    
+        .title{
+            font-size: 1.4rem;
+            line-height: 28px;
+            position: relative;
+            top: 1vh;
+            left: 3vw;
+            margin: 0 auto;
+            padding-right: .06em;
+            opacity: 1;
+        }
+    
+        .mute{
+            font-size: 2.2em;
+            top: -2.2em;
+            left: 76vw;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+    }
+
+    .container{
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    
+        .screenDiv{
+            height: 100%;
+            width: 100%;
+    
+            .screen{
+                height: auto;
+                width: 96.6%;
+                background: rgba(255, 255, 255, 0.9);
+                transform: rotate(-1.2deg);
+                position: relative;
+                left: 0.2vw;
+                top: 0vh;
+                padding: 1rem .9rem;
+                
+    
+                .text{
+                    font-size: 1.442rem;
+                    line-height: 30px;
+                    letter-spacing: 0.035em;
+
+                    
+                #cursor{
+                    font-family: serif;
+                    border-left: 1px solid  black;
+                    padding: -2px;
+                    animation: cursor-blink 1s steps(2) infinite;
+                }
+                }
+            }
+
+            
+        .input{
+            position: absolute;
+            top: 2.5rem;
+            left: .9rem;
+            opacity: 0;
+            border: 2px solid red;
+            transform: rotate(-1.2deg);
+            width: 88vw;
+            height: 70vh;
+            font-family: $mouse;
+            font-size: 1.442rem;
+            line-height: 30px;
+            letter-spacing: 0.035em;
+        }
+        }
+    
+
+    
+        .timerDiv{
+            height: 100%;
+            width: 100%;
+            margin-bottom: 1rem;
+    
+            #time{
+                font-size: 1.869rem;
+                line-height: 2.25rem;
+                padding: .2rem .2rem .2rem .2rem;
+                top: 0.6vh;
+                left: 8vw;
+            }
+    
+            #timeBtn{
+                font-size: 1.318rem;
+                line-height: 1.688rem;
+                background: rgba(255, 255, 255, 0.9);
+                padding: .2rem .9rem .2rem .8rem;
+                top: 0vh;
+                left: 20vw;
+            }
+        }
+    }
+
+    .home{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        .board{
+            width: 87.0625%;
+            height: 76.244%;
+            transform: rotate(-1.52deg);
+            position: relative;
+            left: -.4vw;
+            bottom: -2vh;
+
+            .mute{
+                font-size: 4em;
+                top: -4.5rem;
+                right: 0rem;
+                padding: .8rem;
+                color: #5a1106;
+            }
+    
+            .helloText{
+                font-size: 1.4em;
+                line-height: 3.438rem;
+                letter-spacing: 0.056em;
+                margin: 1.9rem 0 0rem 1rem;
+                transform: rotate(-1deg);
+            }
+    
+            .welcomeText{
+                font-size: 1.4em;
+                margin: 0rem 0 .5rem 2rem;
+                letter-spacing: 0.056em;
+                transform: rotate(-1.32deg);
+                height: 6rem;
+                width: 84%;
+            }
+    
+            #toSpeedBee{
+                font-size: 1.888rem;
+                line-height: 3.813rem;
+                margin: 0rem 0 0rem 4rem;
+                letter-spacing: 1.6px;
+                z-index: 3;
+            }
+    
+            #menu{
+                font-size: 1.2em;
+                margin: 31vh 0 0rem 1rem;
+                letter-spacing: 2px;  
+                z-index: 2;
+                position: absolute;
+                bottom: 1.5em;
+                left: .8em;
+            }
+    
+            #angryBirds{
+                position: absolute;
+                height: 100%;
+                transform: rotate(2deg) scale(.4);
+                right: -16.7rem;
+                bottom: -7rem;
+                z-index: 1;
+            }
+        }
+
+        .menuBox{
+            top: 10vh;
+            left: 12vw;
+            z-index: 5;
+            width: 80%;
+            height: auto;
+            padding: 3.2rem 1.6rem;
+            transition: .5s ease;
+            
+    
+            #menuTxt{
+                letter-spacing: 1px;
+                font-size: 1.2em;
+                line-height: 1.2rem;
+            }
+    
+        }
+
+        .close{
+            font-size: 2rem;
+            top: 0rem;
+            right: 0rem;
+            padding: .5rem;
+        }
+
+        .menuActive{
+            display: block;
+            filter: brightness(1);
+        }
+    }
+
+    .rankSection{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        .board{
+            width: 87.0625%;
+            height: 76.244%;
+            transform: rotate(-1.52deg);
+            position: relative;
+            left: -.4vw;
+            bottom: -2vh;
+
+            .mute{
+                font-size: 4em;
+                top: -4.5rem;
+                right: 0rem;
+                padding: .8rem;
+                color: #5a1106;
+            }
+   
+
+            .speedText{
+                font-family: $mouse;
+                font-size: 1.5em;
+                line-height: 2.438rem;
+                position: relative;
+                letter-spacing: 0.035em;
+                color: #A74132;
+                margin: 2.3rem 0 1.2rem 2rem;
+                transform: rotate(-0.21deg);
+            }
+    
+            .rankText{
+                font-family: $mouse;
+                font-size: 1.5em;
+                line-height: 2.438rem;
+                letter-spacing: 0.035em;
+                color: #A74132;
+                position: relative;
+                margin: 0rem 0 0rem 1.5rem;
+                transform: rotate(-0.31deg);
+                height: 5rem;
+    
+                #rank{
+                    color: #777777;
+                }
+            }
+    
+            #toSpeedBee{
+                font-size: 1.888rem;
+                line-height: 3.813rem;
+                margin: 0rem 0 0rem 4rem;
+                letter-spacing: 1.6px;
+                z-index: 3;
+            }
+    
+            #menu{
+                font-size: 1.2em;
+                margin: 31vh 0 0rem 1rem;
+                letter-spacing: 2px;  
+                z-index: 2;
+                position: absolute;
+                bottom: 1.5em;
+                left: .8em;
+            }
+    
+            #angryBirds{
+                position: absolute;
+                height: 100%;
+                transform: rotate(2deg) scale(.4);
+                right: -16.7rem;
+                bottom: -7rem;
+                z-index: 1;
+            }
+        }
+
+        .menuBox{
+            top: 10vh;
+            left: 12vw;
+            z-index: 5;
+            width: 80%;
+            height: auto;
+            padding: 3.2rem 1.6rem;
+            transition: .5s ease;
+            
+    
+            #menuTxt{
+                letter-spacing: 1px;
+                font-size: 1.2em;
+                line-height: 1.2rem;
+            }
+    
+        }
+
+        .close{
+            font-size: 2rem;
+            top: 0rem;
+            right: 0.4rem;
+            padding: .5rem;
+        }
+
+        .menuActive{
+            display: block;
+            filter: brightness(1);
+        }
+    }
+
+    
+}

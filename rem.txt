@@ -1,0 +1,7 @@
+responsive design
+stories
+music
+confirm localstorage issues
+
+
+optimize code

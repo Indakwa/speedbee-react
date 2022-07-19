@@ -1,0 +1,323 @@
+@media only screen and (min-width: 698px) and (max-width: 800px){
+    .topNav{
+        width: 100%;
+        height: 18%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    
+        .back-icon{
+            font-size: 2.9em;
+            top: 2vh;
+        }
+    
+        .title{
+            font-size: 2rem;
+            line-height: 55px;
+            position: relative;
+            top: 6vh;
+            left: 8vw;
+            margin: 0 auto;
+        }
+    
+        .mute{
+            font-size: 2.6em;
+            top: 4vh;
+            left: 25vw;
+        }
+    }
+
+    .container{
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: .5rem;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    
+        .screenDiv{
+            height: 100%;
+            width: 100%;
+    
+            .screen{
+                height: auto;
+                width: 86.6%;
+                background: rgba(255, 255, 255, 0.9);
+                transform: rotate(-1.2deg);
+                position: relative;
+                left: 8vw;
+                top: 6vh;
+                padding: 1.5rem 1.2rem;
+                
+    
+                .text{
+                    font-size: 1.6em;
+                    line-height: 38px;
+                    letter-spacing: 0.035em;
+                }
+            }
+            .input{
+                position: absolute;
+                z-index: 3;
+                top: 4rem;
+                left: 2.4rem;
+                opacity: 0;
+                height: 56vh;
+                width: 84vw;
+                transform: rotate(-1.2deg);
+                font-size: 2rem;
+                line-height: 40px;
+                letter-spacing: 0.035em;
+                text-align: start;
+            }
+
+        }
+    
+    
+        .timerDiv{
+            height: 100%;
+            width: 100%;
+            margin: 1rem 0;
+    
+            #time{
+                font-size: 2.3em;
+                line-height: 2.3rem;
+                padding: .2rem .2rem .2rem .2rem;
+                top: 0.6vh;
+                left: 12vw;
+            }
+    
+            #timeBtn{
+                font-size: 1.6em;
+                line-height: 2.6rem;
+                background: rgba(255, 255, 255, 0.9);
+                padding: .2rem .9rem .2rem .8rem;
+                top: 0vh;
+                left: 56vw;
+            }
+        }
+    }
+
+    .home{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        .board{
+            width: 84%;
+            height: 74%;
+            transform: rotate(-1.52deg);
+            position: relative;
+            left: -.4vw;
+            bottom: -2vh;
+
+            .mute{
+                font-size: 3.5em;
+                top: 1.5rem;
+                right: 2rem;
+                padding: .8rem;
+            }
+    
+            .helloText{
+                font-size: 1.8em;
+                line-height: 3rem;
+                letter-spacing: 0.056em;
+                margin: 2.5rem 0 0rem 3rem;
+                transform: rotate(-1deg);
+            }
+    
+            .welcomeText{
+                font-size: 1.8em;
+                margin: .5rem 0 1rem 4rem;
+                letter-spacing: 0.056em;
+                transform: rotate(-1.32deg);
+            }
+    
+            #toSpeedBee{
+                font-size: 2em;
+                line-height: 3.813rem;
+                margin: 1rem 0 0rem 6rem;
+                letter-spacing: 1.6px;
+            }
+    
+            #menu{
+                font-size: 1.3em;
+                margin: 1rem 0 0rem 2rem;
+                letter-spacing: 2px;  
+                bottom: 2rem;
+            }
+    
+            #angryBirds{
+                position: absolute;
+                height: 90%;
+                transform: rotate(2deg) scale(.7);
+                right: -12rem;
+                bottom: -3.4rem;
+            }
+        }
+
+        .menuBox{
+            display: none;
+            position: absolute;
+            top: 3vh;
+            left: 12vw;
+            z-index: 1;
+            background: #f3e8cc;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transform: rotate(1.52deg);
+            width: 35%;
+            height: auto;
+            padding: 2rem 2rem;
+            transition: .5s ease;
+            //animation: bounce 2s 1;
+    
+    
+            .close{
+                position: absolute;
+                font-size: 2rem;
+                top: 0rem;
+                right: .5rem;
+                color: #A74132;
+                padding: 1rem;
+                cursor: pointer;
+                font-family: $bangers;
+            }
+            
+    
+            #menuTxt{
+                font-family: $mouse;
+                letter-spacing: 1px;
+                text-align: center;
+                font-size: 1em;
+                color: #777777;
+                line-height: 1.2rem;
+            }
+    
+        }
+
+        .menuActive{
+            display: block;
+            filter: brightness(1);
+        }
+    }
+
+    .rankSection{
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    
+        .board{
+            width: 84%;
+            height: 74%;
+            transform: rotate(-1.52deg);
+            position: relative;
+            left: -.4vw;
+            bottom: -2vh;
+
+            .mute{
+                font-size: 3.5em;
+                top: 1.5rem;
+                right: 2rem;
+                padding: .8rem;
+            }
+    
+
+            .speedText{
+                font-family: $mouse;
+                font-size: 1.8em;
+                line-height: 2.438rem;
+                position: relative;
+                letter-spacing: 0.035em;
+                color: #A74132;
+                margin: 2.8rem 0 1.8rem 3.5rem;
+                transform: rotate(-0.21deg);
+            }
+    
+            .rankText{
+                font-family: $mouse;
+                font-size: 1.8em;
+                line-height: 2.438rem;
+                letter-spacing: 0.035em;
+                color: #A74132;
+                position: relative;
+                margin: 0rem 0 0rem 3rem;
+                transform: rotate(-0.31deg);
+    
+                #rank{
+                    color: #777777;
+                }
+            }
+    
+            #toSpeedBee{
+                font-size: 2em;
+                line-height: 3.813rem;
+                margin: 2.5rem 0 0rem 6rem;
+                letter-spacing: 1.6px;
+            }
+    
+            #menu{
+                font-size: 1.3em;
+                margin: 1rem 0 0rem 2rem;
+                letter-spacing: 2px;  
+                bottom: 2rem;
+            }
+    
+            #angryBirds{
+                position: absolute;
+                height: 90%;
+                transform: rotate(2deg) scale(.7);
+                right: -12rem;
+                bottom: -3.4rem;
+            }
+        }
+
+        .menuBox{
+            display: none;
+            position: absolute;
+            top: 3vh;
+            left: 12vw;
+            z-index: 1;
+            background: #f3e8cc;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            transform: rotate(1.52deg);
+            width: 35%;
+            height: auto;
+            padding: 2rem 2rem;
+            transition: .5s ease;
+            //animation: bounce 2s 1;
+    
+    
+            .close{
+                position: absolute;
+                font-size: 2rem;
+                top: 0rem;
+                right: .5rem;
+                color: #A74132;
+                padding: 1rem;
+                cursor: pointer;
+                font-family: $bangers;
+            }
+            
+    
+            #menuTxt{
+                font-family: $mouse;
+                letter-spacing: 1px;
+                text-align: center;
+                font-size: 1em;
+                color: #777777;
+                line-height: 1.2rem;
+            }
+    
+        }
+
+        .menuActive{
+            display: block;
+            filter: brightness(1);
+        }
+    }
+    
+}

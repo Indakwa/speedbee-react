@@ -1,0 +1,1480 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: bangers;
+  src: url(../assets/fonts/bangers.ttf);
+}
+@font-face {
+  font-family: mouse;
+  src: url(../assets/fonts/mouse.ttf);
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(112.48deg, #EABF4C 13.49%, #700D0E 70.42%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.home .board {
+  width: 67.0625%;
+  height: 76.244%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-1.52deg);
+  position: relative;
+  left: -3.4vw;
+  bottom: -2vh;
+  transition: 0.5s ease;
+}
+.home .board .mute {
+  font-size: 5em;
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+  transform: rotate(3.52deg);
+  cursor: pointer;
+  padding: 0.8rem;
+  z-index: 5;
+  color: #611c12;
+  transition: 0.5s ease;
+}
+.home .board .mute:hover {
+  color: #A74132;
+  transform: scale(1.1);
+}
+.home .board .helloText {
+  display: inline-block;
+  font-family: mouse, sans-serif;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  letter-spacing: 0.035em;
+  color: #A74132;
+  position: relative;
+  margin: 4rem 0 3rem 4rem;
+}
+.home .board .welcomeText {
+  font-family: mouse, sans-serif;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  position: relative;
+  margin: 0rem 0 3rem 7.8rem;
+  letter-spacing: 0.035em;
+  color: #777777;
+  transform: rotate(-1.32deg);
+}
+.home .board #toSpeedBee {
+  display: inline-block;
+  font-family: bangers, cursive;
+  font-size: 3.588rem;
+  color: #EF6251;
+  text-shadow: 0px 36.1734px 43.1299px rgba(0, 0, 0, 0.25);
+  transform: rotate(-0.91deg);
+  line-height: 3.813rem;
+  margin: 0rem 0 3rem 12rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+  z-index: 5;
+  position: relative;
+}
+.home .board #toSpeedBee:hover {
+  color: #f74d3a;
+  transform: scale(1.1);
+}
+.home .board #menu {
+  display: block;
+  color: #f5733c;
+  font-family: bangers, cursive;
+  font-size: 2.692rem;
+  text-shadow: 0px 27.1361px 32.3546px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.11deg);
+  margin: 6rem 0 2rem 4rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 1rem;
+}
+.home .board #menu:hover {
+  color: #F38E62;
+  transform: scale(1.2);
+}
+.home .board #angryBirds {
+  position: absolute;
+  height: 82%;
+  transform: rotate(0.22deg);
+  right: -12.6rem;
+  bottom: -1.8rem;
+}
+.home .menuBox {
+  display: none;
+  position: absolute;
+  top: 3vh;
+  left: 12vw;
+  z-index: 1;
+  background: #f3e8cc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(1.52deg);
+  width: 25%;
+  height: 70%;
+  padding: 4rem 3rem;
+  transition: 0.5s ease;
+}
+.home .menuBox .close {
+  position: absolute;
+  font-size: 2rem;
+  top: 0rem;
+  right: 0.5rem;
+  color: #A74132;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: bangers, cursive;
+}
+.home .menuBox #menuTxt {
+  font-family: mouse, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #777777;
+  line-height: 1.7rem;
+}
+.home .menuBox ul {
+  list-style-type: none;
+}
+.home .menuActive {
+  display: block;
+  filter: brightness(1);
+}
+.home .dim {
+  filter: brightness(80%);
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../assets/images/spongebob2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.topNav {
+  position: relative;
+  width: 95%;
+  height: 26.5%;
+  margin: 0 auto;
+}
+.topNav .back-icon {
+  font-size: 6rem;
+  color: #712A0C;
+  position: relative;
+  top: 5vh;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+.topNav .back-icon:hover {
+  transform: scale(1.1);
+  color: #a74a22;
+}
+.topNav .title {
+  border: 0.4px solid rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9);
+  display: inline-block;
+  font-family: bangers, cursive;
+  font-size: 3.978rem;
+  font-weight: 400;
+  text-shadow: 0px 21.3636px 25.472px rgba(0, 0, 0, 0.25);
+  transform: rotate(1.07deg);
+  line-height: 68px;
+  color: #E25C4F;
+  padding: 0.3rem 0.7rem 0.3rem 0.1rem;
+  position: relative;
+  top: 9vh;
+  left: 4vw;
+}
+.topNav .mute {
+  font-size: 6rem;
+  color: #712A0C;
+  position: relative;
+  top: 8vh;
+  left: 19vw;
+  background: rgba(255, 255, 255, 0.9);
+  transform: rotate(7.29deg);
+  padding: 0.2rem;
+  cursor: pointer;
+  transition: ease 0.5s;
+}
+.topNav .mute:hover {
+  transform: scale(1.1);
+  color: #a74a22;
+}
+
+.container {
+  position: relative;
+  width: 95%;
+  height: 73.5%;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.container .screenDiv {
+  height: 100%;
+  width: 75%;
+}
+.container .screenDiv .screen {
+  height: auto;
+  width: 86.6%;
+  background: rgba(255, 255, 255, 0.9);
+  transform: rotate(-1.2deg);
+  position: relative;
+  left: 7.2vw;
+  top: 3vh;
+  padding: 4rem 3rem;
+}
+.container .screenDiv .screen .text {
+  font-family: mouse, sans-serif;
+  font-size: 2.442rem;
+  color: #777;
+  text-align: center;
+  line-height: 45px;
+  letter-spacing: 0.035em;
+}
+.container .screenDiv .screen .text #cursor {
+  font-family: serif;
+  border-left: 0.1px solid black;
+  padding: -2px;
+  animation: cursor-blink 1s steps(2) infinite;
+}
+.container .screenDiv .screen #typedText {
+  color: #158fce;
+}
+.container .input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.container .timerDiv {
+  height: 100%;
+  width: 20%;
+}
+.container .timerDiv #time {
+  display: inline-block;
+  font-size: 5.869rem;
+  font-family: bangers, cursive;
+  color: #4D681E;
+  transform: rotate(-5.76deg);
+  line-height: 6.25rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.2rem 0.9rem 0.2rem 0.8rem;
+  text-shadow: 0px 22.6812px 27.043px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 8.6vh;
+  text-align: center;
+}
+.container .timerDiv #timeBtn {
+  display: inline-block;
+  font-size: 3rem;
+  font-family: bangers, cursive;
+  color: #EF6251;
+  transform: rotate(5deg);
+  line-height: 3.5rem;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.5rem 0.9rem;
+  text-shadow: 0px 22.6812px 27.043px rgba(0, 0, 0, 0.25);
+  position: relative;
+  top: 17vh;
+  left: -1vw;
+  cursor: pointer;
+  transition: ease 0.5s;
+  text-align: center;
+}
+.container .timerDiv #timeBtn:hover {
+  transform: scale(1.08);
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+}
+.rankSection {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(112.48deg, #EABF4C 13.49%, #700D0E 70.42%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.rankSection .board {
+  width: 67.0625%;
+  height: 76.244%;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-1.52deg);
+  position: relative;
+  left: -3.4vw;
+  bottom: -2vh;
+}
+.rankSection .board .mute {
+  font-size: 5em;
+  position: absolute;
+  top: 3rem;
+  right: 6rem;
+  transform: rotate(3.52deg);
+  cursor: pointer;
+  padding: 0.8rem;
+  z-index: 5;
+  color: #611c12;
+  transition: 0.5s ease;
+}
+.rankSection .board .mute:hover {
+  color: #A74132;
+  transform: scale(1.1);
+}
+.rankSection .board .speedText {
+  font-family: mouse, sans-serif;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  position: relative;
+  margin: 0rem 0 3rem 4rem;
+  letter-spacing: 0.035em;
+  color: #A74132;
+  margin: 4rem 0 3rem 5rem;
+}
+.rankSection .board .speedText #speed {
+  color: #777777;
+}
+.rankSection .board .rankText {
+  font-family: mouse, sans-serif;
+  font-size: 3rem;
+  line-height: 3.438rem;
+  letter-spacing: 0.035em;
+  color: #A74132;
+  position: relative;
+  margin: 0rem 0 3rem 4rem;
+  transform: rotate(-0.31deg);
+}
+.rankSection .board .rankText #rank {
+  color: #777777;
+}
+.rankSection .board #toSpeedBee {
+  position: relative;
+  display: inline-block;
+  font-family: bangers, cursive;
+  font-size: 3.588rem;
+  color: #EF6251;
+  text-shadow: 0px 36.1734px 43.1299px rgba(0, 0, 0, 0.25);
+  transform: rotate(-0.91deg);
+  line-height: 3.813rem;
+  margin: 0rem 0 3rem 12rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+  letter-spacing: 2px;
+  z-index: 5;
+}
+.rankSection .board #toSpeedBee:hover {
+  color: #f74d3a;
+  transform: scale(1.1);
+}
+.rankSection .board #menu {
+  display: block;
+  color: #f5733c;
+  font-family: bangers, cursive;
+  font-size: 2.692rem;
+  text-shadow: 0px 27.1361px 32.3546px rgba(0, 0, 0, 0.25);
+  transform: rotate(0.11deg);
+  margin: 6rem 0 2rem 4rem;
+  transition: ease 0.5s;
+  cursor: pointer;
+  width: 10%;
+  text-align: center;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 1rem;
+}
+.rankSection .board #menu:hover {
+  color: #F38E62;
+  transform: scale(1.2);
+}
+.rankSection .board #angryBirds {
+  position: absolute;
+  height: 82%;
+  transform: rotate(0.22deg);
+  right: -12.6rem;
+  bottom: -1.8rem;
+}
+.rankSection .menuBox {
+  display: none;
+  position: absolute;
+  top: 3vh;
+  left: 12vw;
+  z-index: 1;
+  background: #f3e8cc;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(1.52deg);
+  width: 25%;
+  height: 70%;
+  padding: 4rem 3rem;
+  transition: 0.5s ease;
+}
+.rankSection .menuBox #menuTxt {
+  font-family: mouse, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #777777;
+  line-height: 1.7rem;
+}
+.rankSection .menuBox ul {
+  list-style-type: none;
+}
+.rankSection .close {
+  position: absolute;
+  font-size: 2rem;
+  top: 0rem;
+  right: 0.5rem;
+  color: #A74132;
+  padding: 1rem;
+  cursor: pointer;
+  font-family: bangers, cursive;
+}
+.rankSection .menuActive {
+  display: block;
+  filter: brightness(1);
+}
+.rankSection .dim {
+  filter: brightness(80%);
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+  .topNav {
+    width: 95%;
+  }
+  .topNav .back-icon {
+    font-size: 4em;
+    top: 4vh;
+  }
+  .topNav .title {
+    font-size: 3.8em;
+    font-weight: 400;
+    line-height: 68px;
+    padding: 0.3rem 0.7rem 0.3rem 0.1rem;
+    top: 9vh;
+    left: 6vw;
+  }
+  .topNav .mute {
+    font-size: 4em;
+    top: 3vh;
+    left: 17vw;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: ease 0.5s;
+  }
+  .container .screenDiv {
+    height: 100%;
+    width: 75%;
+  }
+  .container .screenDiv .screen {
+    padding: 3rem 2.8rem;
+  }
+  .container .screenDiv .screen .text {
+    font-size: 2em;
+    line-height: 45px;
+    letter-spacing: 0.035em;
+  }
+  .container .timerDiv {
+    height: 100%;
+    width: 20%;
+  }
+  .container .timerDiv #time {
+    display: inline-block;
+    font-size: 4em;
+    font-family: bangers, cursive;
+    color: #4D681E;
+    transform: rotate(-5.76deg);
+    line-height: 1.2em;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 0.9rem 0.2rem 0.8rem;
+    text-shadow: 0px 22.6812px 27.043px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 8.6vh;
+    text-align: center;
+  }
+  .container .timerDiv #timeBtn {
+    display: inline-block;
+    font-size: 2.3em;
+    font-family: bangers, cursive;
+    color: #EF6251;
+    transform: rotate(5deg);
+    line-height: 3.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem 0.9rem;
+    text-shadow: 0px 22.6812px 27.043px rgba(0, 0, 0, 0.25);
+    position: relative;
+    top: 17vh;
+    left: -1vw;
+    cursor: pointer;
+    transition: ease 0.5s;
+    text-align: center;
+  }
+  .container .timerDiv #timeBtn:hover {
+    transform: scale(1.08);
+  }
+  .home {
+    overflow: hidden;
+  }
+  .home .board {
+    width: 63%;
+    height: 73%;
+    left: -3.4vw;
+    bottom: -2vh;
+  }
+  .home .board .mute {
+    font-size: 4.5em;
+    top: 2.3rem;
+    right: 4rem;
+  }
+  .home .board .helloText {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    letter-spacing: 0.035em;
+    margin: 4rem 0 2rem 4rem;
+  }
+  .home .board .welcomeText {
+    font-size: 2.4rem;
+    line-height: 3rem;
+    position: relative;
+    margin: 0rem 0 2.6rem 7.8rem;
+    letter-spacing: 0.035em;
+  }
+  .home .board #toSpeedBee {
+    font-size: 2.4rem;
+    line-height: 3.813rem;
+    margin: 0rem 0 3rem 12rem;
+  }
+  .home .board #menu {
+    font-size: 1.8rem;
+    margin: 2.6rem 0 2rem 4rem;
+    transition: ease 0.5s;
+    cursor: pointer;
+  }
+  .home .board #angryBirds {
+    height: 70%;
+    transform: rotate(0.22deg);
+    right: -8rem;
+    bottom: -1rem;
+  }
+  .home .menuBox {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 12vw;
+    z-index: 1;
+    background: #f3e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(1.52deg);
+    width: 25%;
+    height: auto;
+    padding: 2rem 2rem;
+    transition: 0.5s ease;
+  }
+  .home .menuBox .close {
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.5rem;
+    color: #A74132;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: bangers, cursive;
+  }
+  .home .menuBox #menuTxt {
+    font-family: mouse, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #777777;
+    line-height: 1.5rem;
+  }
+  .home .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+  .rankSection {
+    overflow: hidden;
+  }
+  .rankSection .board {
+    width: 63%;
+    height: 73%;
+    left: -3.4vw;
+    bottom: -2vh;
+  }
+  .rankSection .board .mute {
+    font-size: 4.5em;
+    top: 2.3rem;
+    right: 4rem;
+  }
+  .rankSection .board .speedText {
+    font-size: 2.3em;
+    line-height: 3rem;
+    position: relative;
+    letter-spacing: 0.035em;
+    margin: 4rem 0 2.4rem 5rem;
+  }
+  .rankSection .board .rankText {
+    font-size: 2.3em;
+    line-height: 3.438rem;
+    letter-spacing: 0.035em;
+    margin: 0rem 0 2.6rem 4rem;
+  }
+  .rankSection .board #toSpeedBee {
+    font-size: 2.4em;
+    line-height: 3.813rem;
+    margin: 0rem 0 3rem 12rem;
+  }
+  .rankSection .board #menu {
+    font-size: 1.8em;
+    margin: 2.6rem 0 2rem 4rem;
+    transition: ease 0.5s;
+    cursor: pointer;
+  }
+  .rankSection .board #angryBirds {
+    height: 70%;
+    transform: rotate(0.22deg);
+    right: -8rem;
+    bottom: -1rem;
+  }
+  .rankSection .menuBox {
+    display: none;
+    position: absolute;
+    top: 5vh;
+    left: 12vw;
+    z-index: 1;
+    background: #f3e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(1.52deg);
+    width: 25%;
+    height: auto;
+    padding: 2rem 2rem;
+    transition: 0.5s ease;
+  }
+  .rankSection .menuBox .close {
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.5rem;
+    color: #A74132;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: bangers, cursive;
+  }
+  .rankSection .menuBox #menuTxt {
+    font-family: mouse, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #777777;
+    line-height: 1.5rem;
+  }
+  .rankSection .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1300px) {
+  .topNav {
+    width: 95%;
+  }
+  .topNav .back-icon {
+    font-size: 4rem;
+    top: 4vh;
+  }
+  .topNav .title {
+    font-size: 2.8em;
+    font-weight: 400;
+    line-height: 63px;
+    padding: 0.3rem 0.7rem 0.3rem 0.1rem;
+    top: 9vh;
+    left: 2vw;
+  }
+  .topNav .mute {
+    font-size: 3rem;
+    top: 2vh;
+    left: 14vw;
+    padding: 0.2rem;
+    cursor: pointer;
+    transition: ease 0.5s;
+  }
+  .container {
+    overflow: hidden;
+    width: 95%;
+    height: 73.5%;
+    padding: 1rem;
+  }
+  .container .screenDiv {
+    height: 100%;
+    width: 75%;
+  }
+  .container .screenDiv .screen {
+    height: auto;
+    width: 88.6%;
+    left: 2.2vw;
+    top: 3vh;
+    padding: 3rem 2.6rem;
+  }
+  .container .screenDiv .screen .text {
+    font-size: 1.8em;
+    color: #777;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.035em;
+  }
+  .container .timerDiv {
+    height: 100%;
+    width: 20%;
+  }
+  .container .timerDiv #time {
+    font-size: 3em;
+    line-height: 1.4em;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 0.9rem 0.2rem 0.8rem;
+    top: 9.6vh;
+  }
+  .container .timerDiv #timeBtn {
+    font-size: 2em;
+    line-height: 1.4em;
+    padding: 0.2rem 0.9rem 0.2rem 0.8rem;
+    top: 22vh;
+    left: 0vw;
+  }
+  .home {
+    overflow: hidden;
+  }
+  .home .board {
+    width: 74%;
+    height: 74%;
+    left: -3.4vw;
+    bottom: -2vh;
+  }
+  .home .board .mute {
+    font-size: 4.5em;
+    top: 1.8rem;
+    right: 4rem;
+  }
+  .home .board .helloText {
+    font-size: 2em;
+    line-height: 3rem;
+    letter-spacing: 0.035em;
+    margin: 3rem 0 2rem 4rem;
+  }
+  .home .board .welcomeText {
+    font-size: 2em;
+    line-height: 3rem;
+    position: relative;
+    margin: 0rem 0 2.6rem 7rem;
+    letter-spacing: 0.035em;
+  }
+  .home .board #toSpeedBee {
+    font-size: 2.3em;
+    line-height: 3.813rem;
+    margin: 0rem 0 3rem 12rem;
+  }
+  .home .board #menu {
+    font-size: 1.8em;
+    margin: 6rem 0 2rem 4rem;
+    transition: ease 0.5s;
+    cursor: pointer;
+  }
+  .home .board #angryBirds {
+    height: 65%;
+    transform: rotate(0.22deg);
+    right: -7rem;
+    bottom: -0.5rem;
+  }
+  .home .menuBox {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 12vw;
+    z-index: 1;
+    background: #f3e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(1.52deg);
+    width: 35%;
+    height: auto;
+    padding: 2rem 2rem;
+    transition: 0.5s ease;
+  }
+  .home .menuBox .close {
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.5rem;
+    color: #A74132;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: bangers, cursive;
+  }
+  .home .menuBox #menuTxt {
+    font-family: mouse, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #777777;
+    line-height: 1.5rem;
+  }
+  .home .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+  .rankSection {
+    overflow: hidden;
+  }
+  .rankSection .board {
+    width: 77.0625%;
+    height: 76.244%;
+    left: -3.4vw;
+    bottom: -2vh;
+  }
+  .rankSection .board .mute {
+    font-size: 4.5em;
+    top: 1.8rem;
+    right: 4rem;
+  }
+  .rankSection .board .speedText {
+    font-size: 2em;
+    line-height: 3rem;
+    position: relative;
+    letter-spacing: 0.035em;
+    margin: 4rem 0 2.4rem 5rem;
+  }
+  .rankSection .board .rankText {
+    font-size: 2em;
+    line-height: 3rem;
+    letter-spacing: 0.035em;
+    margin: 0rem 0 2.6rem 4rem;
+  }
+  .rankSection .board #toSpeedBee {
+    font-size: 2.3em;
+    line-height: 3.813rem;
+    margin: 0rem 0 3rem 12rem;
+  }
+  .rankSection .board #menu {
+    font-size: 1.8em;
+    margin: 6rem 0 2rem 4rem;
+    transition: ease 0.5s;
+    cursor: pointer;
+  }
+  .rankSection .board #angryBirds {
+    height: 65%;
+    transform: rotate(0.22deg);
+    right: -7rem;
+    bottom: -0.5rem;
+  }
+  .rankSection .menuBox {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 12vw;
+    z-index: 1;
+    background: #f3e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(1.52deg);
+    width: 35%;
+    height: auto;
+    padding: 2rem 2rem;
+    transition: 0.5s ease;
+  }
+  .rankSection .menuBox .close {
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.5rem;
+    color: #A74132;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: bangers, cursive;
+  }
+  .rankSection .menuBox #menuTxt {
+    font-family: mouse, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #777777;
+    line-height: 1.5rem;
+  }
+  .rankSection .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+}
+@media only screen and (min-width: 698px) and (max-width: 800px) {
+  .topNav {
+    width: 100%;
+    height: 18%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  .topNav .back-icon {
+    font-size: 2.9em;
+    top: 2vh;
+  }
+  .topNav .title {
+    font-size: 2rem;
+    line-height: 55px;
+    position: relative;
+    top: 6vh;
+    left: 8vw;
+    margin: 0 auto;
+  }
+  .topNav .mute {
+    font-size: 2.6em;
+    top: 4vh;
+    left: 25vw;
+  }
+  .container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .container .screenDiv {
+    height: 100%;
+    width: 100%;
+  }
+  .container .screenDiv .screen {
+    height: auto;
+    width: 86.6%;
+    background: rgba(255, 255, 255, 0.9);
+    transform: rotate(-1.2deg);
+    position: relative;
+    left: 8vw;
+    top: 6vh;
+    padding: 1.5rem 1.2rem;
+  }
+  .container .screenDiv .screen .text {
+    font-size: 1.6em;
+    line-height: 38px;
+    letter-spacing: 0.035em;
+  }
+  .container .screenDiv .input {
+    position: absolute;
+    z-index: 3;
+    top: 4rem;
+    left: 2.4rem;
+    opacity: 0;
+    height: 56vh;
+    width: 84vw;
+    transform: rotate(-1.2deg);
+    font-size: 2rem;
+    line-height: 40px;
+    letter-spacing: 0.035em;
+    text-align: start;
+  }
+  .container .timerDiv {
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0;
+  }
+  .container .timerDiv #time {
+    font-size: 2.3em;
+    line-height: 2.3rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    top: 0.6vh;
+    left: 12vw;
+  }
+  .container .timerDiv #timeBtn {
+    font-size: 1.6em;
+    line-height: 2.6rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 0.9rem 0.2rem 0.8rem;
+    top: 0vh;
+    left: 56vw;
+  }
+  .home {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .home .board {
+    width: 84%;
+    height: 74%;
+    transform: rotate(-1.52deg);
+    position: relative;
+    left: -0.4vw;
+    bottom: -2vh;
+  }
+  .home .board .mute {
+    font-size: 3.5em;
+    top: 1.5rem;
+    right: 2rem;
+    padding: 0.8rem;
+  }
+  .home .board .helloText {
+    font-size: 1.8em;
+    line-height: 3rem;
+    letter-spacing: 0.056em;
+    margin: 2.5rem 0 0rem 3rem;
+    transform: rotate(-1deg);
+  }
+  .home .board .welcomeText {
+    font-size: 1.8em;
+    margin: 0.5rem 0 1rem 4rem;
+    letter-spacing: 0.056em;
+    transform: rotate(-1.32deg);
+  }
+  .home .board #toSpeedBee {
+    font-size: 2em;
+    line-height: 3.813rem;
+    margin: 1rem 0 0rem 6rem;
+    letter-spacing: 1.6px;
+  }
+  .home .board #menu {
+    font-size: 1.3em;
+    margin: 1rem 0 0rem 2rem;
+    letter-spacing: 2px;
+    bottom: 2rem;
+  }
+  .home .board #angryBirds {
+    position: absolute;
+    height: 90%;
+    transform: rotate(2deg) scale(0.7);
+    right: -12rem;
+    bottom: -3.4rem;
+  }
+  .home .menuBox {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 12vw;
+    z-index: 1;
+    background: #f3e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(1.52deg);
+    width: 35%;
+    height: auto;
+    padding: 2rem 2rem;
+    transition: 0.5s ease;
+  }
+  .home .menuBox .close {
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.5rem;
+    color: #A74132;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: bangers, cursive;
+  }
+  .home .menuBox #menuTxt {
+    font-family: mouse, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1em;
+    color: #777777;
+    line-height: 1.2rem;
+  }
+  .home .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+  .rankSection {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .rankSection .board {
+    width: 84%;
+    height: 74%;
+    transform: rotate(-1.52deg);
+    position: relative;
+    left: -0.4vw;
+    bottom: -2vh;
+  }
+  .rankSection .board .mute {
+    font-size: 3.5em;
+    top: 1.5rem;
+    right: 2rem;
+    padding: 0.8rem;
+  }
+  .rankSection .board .speedText {
+    font-family: mouse, sans-serif;
+    font-size: 1.8em;
+    line-height: 2.438rem;
+    position: relative;
+    letter-spacing: 0.035em;
+    color: #A74132;
+    margin: 2.8rem 0 1.8rem 3.5rem;
+    transform: rotate(-0.21deg);
+  }
+  .rankSection .board .rankText {
+    font-family: mouse, sans-serif;
+    font-size: 1.8em;
+    line-height: 2.438rem;
+    letter-spacing: 0.035em;
+    color: #A74132;
+    position: relative;
+    margin: 0rem 0 0rem 3rem;
+    transform: rotate(-0.31deg);
+  }
+  .rankSection .board .rankText #rank {
+    color: #777777;
+  }
+  .rankSection .board #toSpeedBee {
+    font-size: 2em;
+    line-height: 3.813rem;
+    margin: 2.5rem 0 0rem 6rem;
+    letter-spacing: 1.6px;
+  }
+  .rankSection .board #menu {
+    font-size: 1.3em;
+    margin: 1rem 0 0rem 2rem;
+    letter-spacing: 2px;
+    bottom: 2rem;
+  }
+  .rankSection .board #angryBirds {
+    position: absolute;
+    height: 90%;
+    transform: rotate(2deg) scale(0.7);
+    right: -12rem;
+    bottom: -3.4rem;
+  }
+  .rankSection .menuBox {
+    display: none;
+    position: absolute;
+    top: 3vh;
+    left: 12vw;
+    z-index: 1;
+    background: #f3e8cc;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transform: rotate(1.52deg);
+    width: 35%;
+    height: auto;
+    padding: 2rem 2rem;
+    transition: 0.5s ease;
+  }
+  .rankSection .menuBox .close {
+    position: absolute;
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.5rem;
+    color: #A74132;
+    padding: 1rem;
+    cursor: pointer;
+    font-family: bangers, cursive;
+  }
+  .rankSection .menuBox #menuTxt {
+    font-family: mouse, sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 1em;
+    color: #777777;
+    line-height: 1.2rem;
+  }
+  .rankSection .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+}
+@media only screen and (max-width: 697px) {
+  .topNav {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  .topNav .back-icon {
+    font-size: 2.6em;
+    top: 1vh;
+    z-index: 5;
+    margin-right: 3rem;
+  }
+  .topNav .back-icon:hover {
+    transform: scale(1.1);
+    color: #a74a22;
+  }
+  .topNav .title {
+    font-size: 1.4rem;
+    line-height: 28px;
+    position: relative;
+    top: 1vh;
+    left: 3vw;
+    margin: 0 auto;
+    padding-right: 0.06em;
+    opacity: 1;
+  }
+  .topNav .mute {
+    font-size: 2.2em;
+    top: -2.2em;
+    left: 76vw;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .container {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .container .screenDiv {
+    height: 100%;
+    width: 100%;
+  }
+  .container .screenDiv .screen {
+    height: auto;
+    width: 96.6%;
+    background: rgba(255, 255, 255, 0.9);
+    transform: rotate(-1.2deg);
+    position: relative;
+    left: 0.2vw;
+    top: 0vh;
+    padding: 1rem 0.9rem;
+  }
+  .container .screenDiv .screen .text {
+    font-size: 1.442rem;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+  }
+  .container .screenDiv .screen .text #cursor {
+    font-family: serif;
+    border-left: 1px solid black;
+    padding: -2px;
+    animation: cursor-blink 1s steps(2) infinite;
+  }
+  .container .screenDiv .input {
+    position: absolute;
+    top: 2.5rem;
+    left: 0.9rem;
+    opacity: 0;
+    border: 2px solid red;
+    transform: rotate(-1.2deg);
+    width: 88vw;
+    height: 70vh;
+    font-family: mouse, sans-serif;
+    font-size: 1.442rem;
+    line-height: 30px;
+    letter-spacing: 0.035em;
+  }
+  .container .timerDiv {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .container .timerDiv #time {
+    font-size: 1.869rem;
+    line-height: 2.25rem;
+    padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+    top: 0.6vh;
+    left: 8vw;
+  }
+  .container .timerDiv #timeBtn {
+    font-size: 1.318rem;
+    line-height: 1.688rem;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 0.9rem 0.2rem 0.8rem;
+    top: 0vh;
+    left: 20vw;
+  }
+  .home {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .home .board {
+    width: 87.0625%;
+    height: 76.244%;
+    transform: rotate(-1.52deg);
+    position: relative;
+    left: -0.4vw;
+    bottom: -2vh;
+  }
+  .home .board .mute {
+    font-size: 4em;
+    top: -4.5rem;
+    right: 0rem;
+    padding: 0.8rem;
+    color: #5a1106;
+  }
+  .home .board .helloText {
+    font-size: 1.4em;
+    line-height: 3.438rem;
+    letter-spacing: 0.056em;
+    margin: 1.9rem 0 0rem 1rem;
+    transform: rotate(-1deg);
+  }
+  .home .board .welcomeText {
+    font-size: 1.4em;
+    margin: 0rem 0 0.5rem 2rem;
+    letter-spacing: 0.056em;
+    transform: rotate(-1.32deg);
+    height: 6rem;
+    width: 84%;
+  }
+  .home .board #toSpeedBee {
+    font-size: 1.888rem;
+    line-height: 3.813rem;
+    margin: 0rem 0 0rem 4rem;
+    letter-spacing: 1.6px;
+    z-index: 3;
+  }
+  .home .board #menu {
+    font-size: 1.2em;
+    margin: 31vh 0 0rem 1rem;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: absolute;
+    bottom: 1.5em;
+    left: 0.8em;
+  }
+  .home .board #angryBirds {
+    position: absolute;
+    height: 100%;
+    transform: rotate(2deg) scale(0.4);
+    right: -16.7rem;
+    bottom: -7rem;
+    z-index: 1;
+  }
+  .home .menuBox {
+    top: 10vh;
+    left: 12vw;
+    z-index: 5;
+    width: 80%;
+    height: auto;
+    padding: 3.2rem 1.6rem;
+    transition: 0.5s ease;
+  }
+  .home .menuBox #menuTxt {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    line-height: 1.2rem;
+  }
+  .home .close {
+    font-size: 2rem;
+    top: 0rem;
+    right: 0rem;
+    padding: 0.5rem;
+  }
+  .home .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+  .rankSection {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .rankSection .board {
+    width: 87.0625%;
+    height: 76.244%;
+    transform: rotate(-1.52deg);
+    position: relative;
+    left: -0.4vw;
+    bottom: -2vh;
+  }
+  .rankSection .board .mute {
+    font-size: 4em;
+    top: -4.5rem;
+    right: 0rem;
+    padding: 0.8rem;
+    color: #5a1106;
+  }
+  .rankSection .board .speedText {
+    font-family: mouse, sans-serif;
+    font-size: 1.5em;
+    line-height: 2.438rem;
+    position: relative;
+    letter-spacing: 0.035em;
+    color: #A74132;
+    margin: 2.3rem 0 1.2rem 2rem;
+    transform: rotate(-0.21deg);
+  }
+  .rankSection .board .rankText {
+    font-family: mouse, sans-serif;
+    font-size: 1.5em;
+    line-height: 2.438rem;
+    letter-spacing: 0.035em;
+    color: #A74132;
+    position: relative;
+    margin: 0rem 0 0rem 1.5rem;
+    transform: rotate(-0.31deg);
+    height: 5rem;
+  }
+  .rankSection .board .rankText #rank {
+    color: #777777;
+  }
+  .rankSection .board #toSpeedBee {
+    font-size: 1.888rem;
+    line-height: 3.813rem;
+    margin: 0rem 0 0rem 4rem;
+    letter-spacing: 1.6px;
+    z-index: 3;
+  }
+  .rankSection .board #menu {
+    font-size: 1.2em;
+    margin: 31vh 0 0rem 1rem;
+    letter-spacing: 2px;
+    z-index: 2;
+    position: absolute;
+    bottom: 1.5em;
+    left: 0.8em;
+  }
+  .rankSection .board #angryBirds {
+    position: absolute;
+    height: 100%;
+    transform: rotate(2deg) scale(0.4);
+    right: -16.7rem;
+    bottom: -7rem;
+    z-index: 1;
+  }
+  .rankSection .menuBox {
+    top: 10vh;
+    left: 12vw;
+    z-index: 5;
+    width: 80%;
+    height: auto;
+    padding: 3.2rem 1.6rem;
+    transition: 0.5s ease;
+  }
+  .rankSection .menuBox #menuTxt {
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    line-height: 1.2rem;
+  }
+  .rankSection .close {
+    font-size: 2rem;
+    top: 0rem;
+    right: 0.4rem;
+    padding: 0.5rem;
+  }
+  .rankSection .menuActive {
+    display: block;
+    filter: brightness(1);
+  }
+}/*# sourceMappingURL=styles.css.map */

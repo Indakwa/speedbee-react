@@ -1,0 +1,101 @@
+.container{
+    position: relative;
+    width: 95%;
+    height: 73.5%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .screenDiv{
+        height: 100%;
+        width: 75%;
+
+        .screen{
+            height: auto;
+            width: 86.6%;
+            background: rgba(255, 255, 255, 0.9);
+            transform: rotate(-1.2deg);
+            position: relative;
+            left: 7.2vw;
+            top: 3vh;
+            padding: 4rem 3rem;
+            
+
+            .text{
+                font-family: $mouse;
+                font-size: 2.442rem;
+                color: #777;
+                text-align: center;
+                line-height: 45px;
+                letter-spacing: 0.035em;
+
+                #cursor{
+                    font-family: serif;
+                    border-left: .1px solid  black;
+                    padding: -2px;
+                    animation: cursor-blink 1s steps(2) infinite;
+                }
+            }
+
+            #typedText{
+                color: #158fce;
+            }
+        }
+    }
+
+    .input{
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+
+
+    .timerDiv{
+        height: 100%;
+        width: 20%;
+
+        #time{
+            display: inline-block;
+            font-size: 5.869rem;
+            font-family: $bangers;
+            color: #4D681E;
+            transform: rotate(-5.76deg);
+            line-height: 6.25rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: .2rem .9rem .2rem .8rem;
+            text-shadow: 0px 22.6812px 27.043px rgba(0, 0, 0, 0.25);
+            position: relative;
+            top: 8.6vh;
+            text-align: center;
+        }
+
+        #timeBtn{
+            display: inline-block;
+            font-size: 3rem;
+            font-family: $bangers;
+            color: #EF6251;
+            transform: rotate(5deg);
+            line-height: 3.5rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: .5rem .9rem;
+            text-shadow: 0px 22.6812px 27.043px rgba(0, 0, 0, 0.25);
+            position: relative;
+            top: 17vh;
+            left: -1vw;
+            cursor: pointer;
+            transition: ease .5s;
+            text-align: center;
+
+            &:hover{
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+//import { Link } from 'react-router-dom'
 import angryBirds from './../assets/images/angry_birds.png';
 import { HiVolumeOff } from 'react-icons/hi';
 import { HiVolumeUp } from 'react-icons/hi';
@@ -40,6 +40,11 @@ const Rank = () => {
 
   const rank = localStorage.getItem('rank')
 
+  const toSpeedBee = () => {
+    window.location.href = "./speedbee";
+  }
+
+
   return (
     <section className='rankSection'>
 
@@ -48,7 +53,8 @@ const Rank = () => {
 
       <h3 className='speedText'>YOUR SPEED  &#62;&#62;&#62; <span id='speed'>{answ} Wpm</span></h3>
       <h3 className='rankText'>YOUR RANK  &#62;&#62;&#62; <span id='rank'>{rank}.</span></h3>
-      <Link to="/speedbee"><p id='toSpeedBee'>SPEEDBEE &#62;&#62;</p></Link>
+      {/* <Link to="/speedbee"><p id='toSpeedBee'>SPEEDBEE &#62;&#62;</p></Link> */}
+      <p id='toSpeedBee' onClick={toSpeedBee}>SPEEDBEE &#62;&#62;</p>
       <p id='menu' onClick={openMenu}>INFO</p>
       <img id='angryBirds' src={angryBirds} alt="angry_birds" />
     </div>
